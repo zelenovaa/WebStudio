@@ -227,19 +227,19 @@ body {
 }
 
 .attention { 
-  background: url('../images/antenna\ 1.png') no-repeat center/contain;
+  background: url('../images/antenna.png') no-repeat center/contain;
 }
 
 .punctuality {
-  background: url('../images/clock\ 1.png') no-repeat center;
+  background: url('../images/clock.png') no-repeat center;
 }
 
 .planning {
-  background: url('../images/diagram\ 1.png') no-repeat center;
+  background: url('../images/diagram.png') no-repeat center;
 }
 
 .modern {
-  background: url('../images/astronaut\ 1.png') no-repeat center;
+  background: url('../images/astronaut.png') no-repeat center;
 }
 
 .about-block > h3 {
