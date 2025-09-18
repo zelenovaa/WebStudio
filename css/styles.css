@@ -51,6 +51,14 @@ body {
   padding: 0 15px;
 }
 
+.hidden {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
 /* HEADER */
 
 .header {
@@ -352,7 +360,8 @@ body {
   text-align: center;
 }
 
-.team-title {
+.team-title,
+.customers-title{
   font-weight: 700;
   font-size: 36px;
 }
@@ -400,10 +409,83 @@ body {
   margin-top: 10px;
 }
 
+.list-icons,
+.footer-icons {
+  display:flex;
+  gap:10px;
+  padding-top: 16px;
+}
+
+.list-icons a {
+  color: #AFB1B8;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: transparent;
+  padding: 12px;
+}
+
+.list-icons a:hover {
+  color: #FFFFFF;
+  border-radius: 50%;
+  background: var(--brand-color);
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+.list-icons svg{
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* CUSTOMERS */
+.customers {
+  padding: 94px 0;
+}
+
+.customers-title {
+  text-align: center;
+}
+
+.customers-icons {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+.customers-icons a {
+  color: #AFB1B8;
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 5px;
+  padding: 16px 32px;
+}
+
+.customers-icons a:hover {
+  color: var(--brand-color);
+  border: 1px solid var(--brand-color);
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+.customers-icons svg{
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
 /* FOOTER */
 .footer {
   background: #2f303a;
   padding: 60px 0;
+}
+.footer-container {
+  display: flex;
+  gap: 130px;
 }
 
 .footer-logo {
@@ -430,6 +512,45 @@ body {
 
 .footer-menu > a:hover {
   color: var(--brand-color);
+}
+
+.footer-social {
+  margin-top: 12px;
+}
+
+.footer-icons {
+  padding-top: 20px;
+} 
+
+.footer-social h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  size: 14px;
+  color: #FFFFFF;
+}
+
+.footer-icons a {
+  color: #FFFFFF;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+}
+
+.footer-icons a:hover {
+  color: #FFFFFF;
+  border-radius: 50%;
+  background: var(--brand-color);
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+.footer-icons svg{
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* POTFOLIO */
